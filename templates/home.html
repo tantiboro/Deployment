@@ -1,0 +1,18 @@
+<h1>Welcome to Breast Cancer prediction</h1>
+<h2>Please enter your cell measurements below:</h2>
+<form method=”POST”>
+ {# This hidden_tag is a CSRF security feature. #}
+ {{ form.hidden_tag() }}
+ <br>
+ {{ form.concavePointsWorst.label }} {{form.concavePointsWorst}}
+ <br>
+ {{ form.areaWorst.label}} {{form.areaWorst}}
+ <br>
+ {{form.radiusWorst.label}}{{form.radiusWorst}}
+ <br>
+ {{form.perimeterWorst.label}}{{form.perimeterWorst}}
+ <br>
+ {{form.concavePointsMean.label}}{{form.concavePointsMean}}
+ <br>
+ {{ form.submit() }}
+</form>
